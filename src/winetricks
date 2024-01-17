@@ -1085,7 +1085,7 @@ winetricks_get_file_arch()
             "03"|"06") _W_file_arch="i386" ;;
             "b7")      _W_file_arch="aarch64" ;;
             "28")      _W_file_arch="aarch32" ;;
-            *)         w_die "Unknown file arch: ${_W_ob_output}";;
+            *)         _W_file_arch="Unknown";;
         esac
     fi
 
